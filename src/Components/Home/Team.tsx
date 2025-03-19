@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import data from '../../Data/team.json';
 import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface TeamItem {
 	img: string;
@@ -56,7 +57,7 @@ const Team: React.FC = () => {
 	};
 
 	return (
-		<section>
+		<>
 			<div className="cs_height_115 cs_height_lg_70"></div>
 			<div className="container">
 				<div className="cs_slider cs_style_1 cs_slider_gap_30">
@@ -146,7 +147,9 @@ const Team: React.FC = () => {
 														/>
 													</svg>
 												</span>
-												<a
+												{/*
+												<Link
+													aria-label="Red social facebook"
 													href="#"
 													className="cs_member_social_item cs_center">
 													<svg
@@ -160,8 +163,8 @@ const Team: React.FC = () => {
 															fill="white"
 														/>
 													</svg>
-												</a>
-												<a
+												</Link>
+												 <Link
 													href="#"
 													className="cs_member_social_item cs_center">
 													<svg
@@ -175,8 +178,8 @@ const Team: React.FC = () => {
 															fill="white"
 														/>
 													</svg>
-												</a>
-												<a
+												</Link>
+												<Link
 													href="#"
 													className="cs_member_social_item cs_center">
 													<svg
@@ -190,8 +193,10 @@ const Team: React.FC = () => {
 															fill="white"
 														/>
 													</svg>
-												</a>
-												<a
+												</Link>
+												*/}
+												<Link
+													aria-label="Red social facebook"
 													href="#"
 													className="cs_member_social_item cs_center">
 													<svg
@@ -205,7 +210,7 @@ const Team: React.FC = () => {
 															fill="white"
 														/>
 													</svg>
-												</a>
+												</Link>
 											</div>
 										</div>
 										<div className="cs_team_member_info">
@@ -248,7 +253,7 @@ const Team: React.FC = () => {
 				</div>
 			</div>
 			<div className="cs_height_120 cs_height_lg_80"></div>
-		</section>
+		</>
 	);
 };
 

@@ -40,7 +40,7 @@ const Testimonial: React.FC = () => {
 	return (
 		<section
 			className="cs_testimonial_1_section cs_bg_filed"
-			data-background="/assets/img/testimonial_bg.svg">
+			style={{ backgroundImage: `url('/assets/img/testimonial_bg.svg')` }}>
 			<div className="cs_height_115 cs_height_lg_70"></div>
 			<div className="container">
 				<div className="row">
@@ -110,7 +110,9 @@ const Testimonial: React.FC = () => {
 													<h3 className="cs_fs_24 cs_accent_color cs_mb_1">
 														{item.title}
 													</h3>
-													<p className="mb-0">{item.subTitle}</p>
+													<p className="mb-0 text-white">
+														{item.subTitle}
+													</p>
 												</div>
 											</div>
 										</div>
@@ -174,7 +176,7 @@ const Testimonial: React.FC = () => {
 			</div>
 			<div
 				className="cs_testimonial_1_thumb"
-				data-background="/assets/img/testimonial_img.png">
+				style={{ backgroundImage: `url('/assets/img/testimonial_img.png')` }}>
 				{/* <div className="cs_testimonial_1_quote_wrap"> */}
 				<div
 					className="cs_testimonial_1_quote cs_accent_bg cs_center wow zoomIn"

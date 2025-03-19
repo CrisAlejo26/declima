@@ -35,12 +35,12 @@ const Blog: React.FC = () => {
 							</h2>
 							<Link
 								href="/blog/blog-details"
-								className="cs_post_thumb text-decoration-none">
+								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_1.jpg"
+									src="/assets/img/post_1.webp"
 									alt="Imagen del artículo Respira Tranquilo"
-									width={264}
-									height={232}
+									fill
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</Link>
 							<Link
@@ -64,12 +64,12 @@ const Blog: React.FC = () => {
 						<div className="cs_post cs_style_2">
 							<Link
 								href="/blog/blog-details"
-								className="cs_post_thumb text-decoration-none">
+								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_2.jpg"
+									src="/assets/img/post_2.webp"
 									alt="Imagen del artículo de mantenimiento"
-									width={636}
-									height={454}
+									fill
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</Link>
 							<div className="cs_post_info">
@@ -136,12 +136,12 @@ const Blog: React.FC = () => {
 							</h2>
 							<Link
 								href="/blog/blog-details"
-								className="cs_post_thumb text-decoration-none">
+								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_3.jpg"
+									src="/assets/img/post_3.webp"
 									alt="Imagen del artículo Soluciones Frescas"
-									width={264}
-									height={232}
+									fill
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</Link>
 							<Link

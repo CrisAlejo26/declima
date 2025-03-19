@@ -22,8 +22,8 @@ const About: React.FC<AboutProps> = ({
 	Number,
 }) => {
 	return (
-		<section>
-			<div className="cs_height_120 cs_height_lg_80"></div>
+		<>
+			<div className="cs_height_120 cs_height_lg_80" id='about'></div>
 			<div className="cs_about cs_style_1">
 				<div className="container">
 					<div className="row align-items-center cs_gap_y_40">
@@ -32,13 +32,20 @@ const About: React.FC<AboutProps> = ({
 							data-wow-duration="0.9s"
 							data-wow-delay="0.25s">
 							<div className="cs_about_thumb">
-								<Image src={Img} alt="About" width={636} height={617} />
+								<Image
+									src={Img}
+									alt="About"
+									width={636}
+									height={617}
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 636px"
+									className="w-auto h-auto"
+								/>
 							</div>
 						</div>
 						<div className="col-xl-6">
 							<div className="cs_about_content">
 								<div className="cs_section_heading cs_style_1 cs_mb_22">
-									<h3 className="cs_section_subtitle cs_accent_color text-uppercase cs_medium cs_fs_20 cs_mb_10">
+									<h2 className="cs_section_subtitle cs_accent_color text-uppercase cs_medium cs_fs_20 cs_mb_10">
 										<Image
 											src="/assets/img/icons/fan.svg"
 											alt="About"
@@ -47,7 +54,7 @@ const About: React.FC<AboutProps> = ({
 											height={15}
 										/>
 										{TitleUp}
-									</h3>
+									</h2>
 									<h2 className="cs_section_title cs_fs_48 cs_semibold mb-0">
 										{Title}
 									</h2>
@@ -101,7 +108,12 @@ const About: React.FC<AboutProps> = ({
 										<div className="cs_about_phone_number_right">
 											<p className="mb-0">{NumberContent}</p>
 											<h3 className="cs_heading_color cs_fs_18 cs_medium mb-0">
-												<a>{Number}</a>
+												<Link
+													href={`https://wa.me/${Number}`}
+													target="_blank"
+													rel="noopener noreferrer">
+													{Number}
+												</Link>
 											</h3>
 										</div>
 									</div>
@@ -112,7 +124,7 @@ const About: React.FC<AboutProps> = ({
 				</div>
 			</div>
 			<div className="cs_height_120 cs_height_lg_80"></div>
-		</section>
+		</>
 	);
 };
 

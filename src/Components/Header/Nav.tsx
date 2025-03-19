@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import DropDown from './DropDown';
+import { routes } from '@/routes';
 
 interface NavProps {
 	setMobileToggle: (value: boolean) => void;
@@ -8,34 +9,14 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 	return (
 		<ul className="cs_nav_list fw-medium">
-			<li className="menu-item-has-children">
+			<li>
 				<Link href="/" className="text-decoration-none">
 					Inicio
 				</Link>
-				<DropDown>
-					<ul>
-						<li>
-							<Link
-								href="/"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Inicio V1
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/home2"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Inicio V2
-							</Link>
-						</li>
-					</ul>
-				</DropDown>
 			</li>
 			<li>
 				<Link
-					href="/about"
+					href="#about"
 					onClick={() => setMobileToggle(false)}
 					className="text-decoration-none">
 					Acerca de
@@ -52,87 +33,26 @@ const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 					<ul>
 						<li>
 							<Link
-								href="/service"
+								href={routes.maintenanceService}
 								onClick={() => setMobileToggle(false)}
 								className="text-decoration-none">
-								Servicios
+								Mantenimiento
 							</Link>
 						</li>
 						<li>
 							<Link
-								href="/service/service-details"
+								href={routes.repairService}
 								onClick={() => setMobileToggle(false)}
 								className="text-decoration-none">
-								Detalles del Servicio
-							</Link>
-						</li>
-					</ul>
-				</DropDown>
-			</li>
-			<li className="menu-item-has-children">
-				<Link href="#" className="text-decoration-none">
-					Páginas
-				</Link>
-				<DropDown>
-					<ul>
-						<li>
-							<Link
-								href="/team"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Equipo
+								Reparación
 							</Link>
 						</li>
 						<li>
 							<Link
-								href="/team/team-details"
+								href={routes.intalationService}
 								onClick={() => setMobileToggle(false)}
 								className="text-decoration-none">
-								Detalles del Equipo
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/project"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Proyecto
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/project/project-details"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Detalles del Proyecto
-							</Link>
-						</li>
-					</ul>
-				</DropDown>
-			</li>
-			<li className="menu-item-has-children">
-				<Link
-					href="/blog"
-					onClick={() => setMobileToggle(false)}
-					className="text-decoration-none">
-					Blog
-				</Link>
-				<DropDown>
-					<ul>
-						<li>
-							<Link
-								href="/blog"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Blog
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/blog/blog-details"
-								onClick={() => setMobileToggle(false)}
-								className="text-decoration-none">
-								Detalles del Blog
+								Instalación
 							</Link>
 						</li>
 					</ul>
@@ -140,7 +60,15 @@ const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 			</li>
 			<li>
 				<Link
-					href="/contact"
+					href="/blog"
+					onClick={() => setMobileToggle(false)}
+					className="text-decoration-none">
+					Blog
+				</Link>
+			</li>
+			<li>
+				<Link
+					href="#contact"
 					onClick={() => setMobileToggle(false)}
 					className="text-decoration-none">
 					Contacto

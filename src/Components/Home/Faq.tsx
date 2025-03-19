@@ -38,8 +38,8 @@ const Faq: React.FC = () => {
 	}, [firstItemOpen]);
 
 	const FaqContent: FaqContentType = {
-		img1: '/assets/img/faq_img_1.jpg',
-		img2: '/assets/img/faq_img_2.jpg',
+		img1: '/assets/img/faq_img_1.webp',
+		img2: '/assets/img/faq_img_2.webp',
 		Experience: '25+',
 		BestAward: 'Premio a la Mejor Empresa de Climatización',
 		Content:
@@ -47,7 +47,7 @@ const Faq: React.FC = () => {
 	};
 
 	return (
-		<section>
+		<>
 			<div className="cs_height_120 cs_height_lg_80"></div>
 			<div className="container">
 				<div className="row cs_gap_y_40">
@@ -60,8 +60,9 @@ const Faq: React.FC = () => {
 								<Image
 									src={FaqContent.img1}
 									alt="Imagen FAQ"
-									width={448}
-									height={529}
+									width={450}
+									height={530}
+									style={{ width: 'auto', height: 'auto' }}
 								/>
 							</div>
 							<div className="cs_faq_thumb_2">
@@ -86,12 +87,11 @@ const Faq: React.FC = () => {
 									<Image
 										src={FaqContent.img2}
 										alt="Imagen adicional FAQ"
-										width={322}
+										width={330}
 										height={330}
 									/>
 								</div>
 							</div>
-							<div className="cs_thumb_text">{FaqContent.BestAward}</div>
 						</div>
 					</div>
 					<div className="col-xl-6">
@@ -125,7 +125,7 @@ const Faq: React.FC = () => {
 				</div>
 			</div>
 			<div className="cs_height_120 cs_height_lg_80"></div>
-		</section>
+		</>
 	);
 };
 

@@ -17,6 +17,7 @@ const dm_Sans = DM_Sans({
 });
 
 export const metadata = {
+	metadataBase: new URL('http://localhost:3000'),
 	title: {
 		absolute: 'Declima - Servicios de Aire Acondicionado en Alicante',
 		default: 'Declima - Servicios de Aire Acondicionado en Alicante',

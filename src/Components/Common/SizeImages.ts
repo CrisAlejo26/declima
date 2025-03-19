@@ -1,0 +1,1 @@
+export const sizeImageFaq1 = { width: 450, height: 530 }

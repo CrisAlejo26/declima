@@ -7,7 +7,6 @@ import VideoModal from '../VideoModal/VideoModal';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Define la interfaz para cada ítem del JSON
 interface HeroDataItem {
 	bgImg: string;
 	subTitle: string;
@@ -25,10 +24,10 @@ const HomeSlider: React.FC = () => {
 	const [iframeSrc, setIframeSrc] = useState<string>('about:blank');
 	const [toggle, setToggle] = useState<boolean>(false);
 
-	const handleClick = (): void => {
-		setIframeSrc('https://www.youtube.com/embed/rRid6GCJtgc');
-		setToggle(prev => !prev);
-	};
+	// const handleClick = (): void => {
+	// 	setIframeSrc('https://www.youtube.com/embed/rRid6GCJtgc');
+	// 	setToggle(prev => !prev);
+	// };
 
 	const handleClose = (): void => {
 		setIframeSrc('about:blank');
@@ -52,7 +51,7 @@ const HomeSlider: React.FC = () => {
 					<div key={i} className="cs_slide">
 						<div
 							className="cs_hero cs_style_1 cs_bg_filed cs_primary_bg cs_center"
-							data-background={item.bgImg}>
+							style={{ backgroundImage: `url(${item.bgImg})` }}>
 							<div className="container">
 								<div
 									className="cs_hero_text wow fadeInRight"
@@ -64,6 +63,7 @@ const HomeSlider: React.FC = () => {
 											alt="img"
 											width={15}
 											height={15}
+											priority
 										/>
 										{item.subTitle}
 									</h3>
@@ -75,6 +75,7 @@ const HomeSlider: React.FC = () => {
 									</p>
 									<div className="cs_hero_btns">
 										<Link
+											aria-label="Leer más"
 											href={item.link}
 											className="cs_btn cs_style_1 text-decoration-none">
 											<span>Leer más</span>
@@ -90,7 +91,7 @@ const HomeSlider: React.FC = () => {
 												/>
 											</svg>
 										</Link>
-										<span
+										{/* <span
 											className="cs_hero_player_btn cs_video_open"
 											onClick={handleClick}>
 											<span className="cs_player_btn cs_center">
@@ -99,7 +100,7 @@ const HomeSlider: React.FC = () => {
 											<span className="cs_hero_play_btn_text">
 												Mira nuestra historia
 											</span>
-										</span>
+										</span> */}
 									</div>
 								</div>
 							</div>

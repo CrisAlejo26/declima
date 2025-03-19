@@ -19,7 +19,7 @@ const Choose: React.FC = () => {
 	return (
 		<section
 			className="cs_why_chose_us cs_style_1 cs_bg_filed overflow-hidden "
-			data-background="/assets/img/why_chose_us_bg_1.jpg">
+			style={{ backgroundImage: `url('/assets/img/why_chose_us_bg_1.webp')` }}>
 			<div className="cs_height_115 cs_height_lg_70"></div>
 			<div
 				className="container wow fadeInRight"
