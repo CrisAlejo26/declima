@@ -1,0 +1,23 @@
+[
+	{
+		"id": "01",
+		"title": "Reparaciones ",
+		"desc": "Servicio de reparación de emergencia para averías y fallos imprevistos en tu aire acondicionado. Respuesta rápida y eficaz para restaurar tu confort.",
+		"img": "/assets/img/icons/service_icon_5.svg",
+		"link": "/service/service-details"
+	},
+	{
+		"id": "02",
+		"title": "Instalación ",
+		"desc": "Instalación profesional de aires acondicionados con asesoría experta para optimizar el rendimiento y la eficiencia energética.",
+		"img": "/assets/img/icons/service_icon_4.svg",
+		"link": "/service/service-details"
+	},
+	{
+		"id": "03",
+		"title": "Mantenimiento ",
+		"desc": "Mantenimiento preventivo y correctivo para asegurar el funcionamiento óptimo y prolongar la vida útil de tu sistema de aire acondicionado.",
+		"img": "/assets/img/icons/service_icon_3.svg",
+		"link": "/service/service-details"
+	}
+]

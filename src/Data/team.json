@@ -1,0 +1,14 @@
+[
+	{
+		"img": "/assets/img/team_member_1.jpg",
+		"title": "Juan Antonio Diaz",
+		"subTitle": "Administrador",
+		"number": "(+34) 637 988 046"
+	},
+	{
+		"img": "/assets/img/team_member_2.jpg",
+		"title": "Laura Fernández",
+		"subTitle": "Gerente de Operaciones",
+		"number": "(+343) 67988047"
+	}
+]

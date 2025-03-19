@@ -1,0 +1,26 @@
+[
+	{
+		"bgImg": "/assets/img/hero_bg_1.jpg",
+		"subTitle": "Servicios mantenimiento de aire acondicionado",
+		"title": "Mantén tu Confort Todo el Año",
+		"desc": "Detecta señales como ruidos inusuales, flujo de aire reducido, enfriamiento desigual, olores extraños y facturas de energía elevadas.",
+		"img": "/assets/img/26541.jpg",
+		"link": "/about"
+	},
+	{
+		"bgImg": "/assets/img/hero_bg_2.jpg",
+		"subTitle": "Servicios instalación de aire acondicionado",
+		"title": "Centro de Reparaciones Rápidas y Confiables",
+		"desc": "Identifica problemas en tu aire acondicionado con indicios como ruidos anómalos, menor flujo de aire, enfriamiento irregular, olores atípicos y consumos energéticos elevados.",
+		"img": "/assets/img/hero_img_2.png",
+		"link": "/about"
+	},
+	{
+		"bgImg": "/assets/img/hero_bg_3.jpg",
+		"subTitle": "Servicios de Reparación de aire acondicionado",
+		"title": "Soluciones Expertas para tu Confort",
+		"desc": "Observa señales como ruidos extraños, reducción del flujo de aire, enfriamiento desigual, olores inusuales y facturas de energía más altas, indicadores de posibles fallos.",
+		"img": "/assets/img/hero_img_3.png",
+		"link": "/about"
+	}
+]

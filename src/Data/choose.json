@@ -1,0 +1,22 @@
+[
+	{
+		"img": "/assets/img/icons/why_chose_us_1.svg",
+		"title": "Soporte en Línea 24/7",
+		"desc": "Nuestro servicio de emergencia Cool Care está disponible las 24 horas, los 7 días de la semana."
+	},
+	{
+		"img": "/assets/img/icons/why_chose_us_2.svg",
+		"title": "Equipo de Mantenimiento Experto",
+		"desc": "Una calibración adecuada de tu sistema de aire acondicionado garantiza un enfriamiento uniforme."
+	},
+	{
+		"img": "/assets/img/icons/why_chose_us_3.svg",
+		"title": "Soluciones Eficientes para tu Hogar",
+		"desc": "Nuestros sistemas ofrecen la mejor solución para enfriar tu hogar de forma eficaz."
+	},
+	{
+		"img": "/assets/img/icons/why_chose_us_4.svg",
+		"title": "Precios Asequibles",
+		"desc": "Ofrecemos servicios de climatización de alta calidad a precios competitivos."
+	}
+]
