@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
+import { articles } from '@/Data/articlesBlog';
 
 const Blog: React.FC = () => {
 	return (
@@ -20,31 +21,28 @@ const Blog: React.FC = () => {
 						<div className="cs_post cs_style_1">
 							<div className="cs_post_meta cs_mb_13">
 								<span className="cs_posted_by cs_center">
-									12
+									{articles[0].dateItem[0]}
 									<br />
-									May
-								</span>
-								<span className="cs_post_comment">
-									<i className="fa-regular fa-comments"></i>03 Comentarios
+									{articles[0].dateItem[1]}
 								</span>
 							</div>
 							<h2 className="cs_fs_24 cs_semibold cs_mb_10">
-								<Link href="/blog/blog-details" className="text-decoration-none">
-									Respira Tranquilo con Aire Fresco
+								<Link href={articles[0].href} className="text-decoration-none">
+									{articles[0].title}
 								</Link>
 							</h2>
 							<Link
-								href="/blog/blog-details"
+								href={articles[0].href}
 								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_1.webp"
+									src={articles[0].image}
 									alt="Imagen del artículo Respira Tranquilo"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</Link>
 							<Link
-								href="/blog/blog-details"
+								href={articles[0].href}
 								className="cs_text_btn cs_fs_16 text-uppercase cs_heading_color cs_bold text-decoration-none">
 								LEER MÁS
 								<svg
@@ -63,10 +61,10 @@ const Blog: React.FC = () => {
 					<div className="col-lg-6">
 						<div className="cs_post cs_style_2">
 							<Link
-								href="/blog/blog-details"
+								href={articles[1].href}
 								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_2.webp"
+									src={articles[1].image}
 									alt="Imagen del artículo de mantenimiento"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -76,30 +74,20 @@ const Blog: React.FC = () => {
 								<div className="cs_post_info_in">
 									<div className="cs_post_meta cs_mb_13">
 										<span className="cs_posted_by cs_center">
-											10
+											{articles[1].dateItem[0]}
 											<br />
-											May
-										</span>
-										<span className="cs_post_admin">
-											<i className="fa-regular fa-user"></i>Por{' '}
-											<a href="#" className="text-white text-decoration-none">
-												Admin
-											</a>
-										</span>
-										<span className="cs_post_comment">
-											<i className="fa-regular fa-comments"></i>08 Comentarios
+											{articles[1].dateItem[1]}
 										</span>
 									</div>
 									<h2 className="cs_fs_24 cs_semibold cs_mb_10 cs_white_color">
 										<Link
-											href="/blog/blog-details"
+											href={articles[1].href}
 											className="text-decoration-none text-white">
-											¿Qué tareas de mantenimiento puedo hacer para cuidar mi
-											aire acondicionado?
+											{articles[1].title}
 										</Link>
 									</h2>
 									<Link
-										href="/blog/blog-details"
+										href={articles[1].href}
 										className="cs_text_btn cs_fs_16 text-uppercase cs_heading_color cs_bold text-decoration-none">
 										LEER MÁS
 										<svg
@@ -121,31 +109,28 @@ const Blog: React.FC = () => {
 						<div className="cs_post cs_style_1">
 							<div className="cs_post_meta cs_mb_13">
 								<span className="cs_posted_by cs_center">
-									09
+									{articles[2].dateItem[0]}
 									<br />
-									May
-								</span>
-								<span className="cs_post_comment">
-									<i className="fa-regular fa-comments"></i>08 Comentarios
+									{articles[2].dateItem[1]}
 								</span>
 							</div>
 							<h2 className="cs_fs_24 cs_semibold cs_mb_10">
-								<Link href="/blog/blog-details" className="text-decoration-none">
-									Soluciones Frescas para Días Cálidos
+								<Link href={articles[2].href} className="text-decoration-none">
+									{articles[2].title}
 								</Link>
 							</h2>
 							<Link
-								href="/blog/blog-details"
+								href={articles[2].href}
 								className="cs_post_thumb text-decoration-none position-relative w-100">
 								<Image
-									src="/assets/img/post_3.webp"
+									src={articles[2].image}
 									alt="Imagen del artículo Soluciones Frescas"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								/>
 							</Link>
 							<Link
-								href="/blog/blog-details"
+								href={articles[2].href}
 								className="cs_text_btn cs_fs_16 text-uppercase cs_heading_color cs_bold text-decoration-none">
 								LEER MÁS
 								<svg

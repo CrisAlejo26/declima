@@ -1,3 +1,4 @@
+import { articles } from '@/Data/articlesBlog';
 import Image from 'next/image';
 import React from 'react';
 
@@ -17,7 +18,7 @@ const ArticleComponent = () => {
 			<section>
 				<div className="position-relative my-5">
 					<Image
-						src="/assets/img/home-optimal-conditions.webp"
+						src={articles[2].image}
 						alt="Imagen representativa de cuidado integral del hogar"
 						width={720}
 						height={305}
@@ -182,7 +183,7 @@ const ArticleComponent = () => {
 				</p>
 			</section>
 			<footer className="mt-5">
-				<p className="text-center text-muted">Publicado el 25 de marzo de 2025</p>
+				<p className="text-center text-muted">Publicado el {articles[2].date}</p>
 			</footer>
 		</article>
 	);
