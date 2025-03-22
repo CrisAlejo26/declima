@@ -2,37 +2,13 @@
 
 import { useState } from 'react';
 import { Card } from '@/Components/Blog/Card';
-import { CardProps } from '@/Interfaces';
-
-const data: CardProps[] = [
-	{
-		title: 'Blog 1',
-		image: '/assets/img/about_img_1.webp',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, lacus nec ultricies.',
-		href: '/blog/1',
-	},
-	{
-		title: 'Blog 2',
-		image: '/assets/img/about_img_1.webp',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, lacus nec ultricies.',
-		href: '/blog/2',
-	},
-	{
-		title: 'Blog 3',
-		image: '/assets/img/about_img_1.webp',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, lacus nec ultricies.',
-		href: '/blog/3',
-	},
-];
+import { articles } from '@/Data/articlesBlog';
 
 const BlogPage = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	// Filtrar las cards de acuerdo al término de búsqueda
-	const filteredData = data.filter(
+	const filteredData = articles.filter(
 		item =>
 			item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
 			item.description.toLowerCase().includes(searchTerm.toLowerCase()),
@@ -63,12 +39,6 @@ const BlogPage = () => {
 							onChange={e => setSearchTerm(e.target.value)}
 							onKeyDown={handleKeyDown}
 						/>
-						<button
-							className="btn btn-primary"
-							type="button"
-							onClick={() => console.log('Buscar:', searchTerm)}>
-							Buscar
-						</button>
 					</div>
 				</div>
 			</header>
