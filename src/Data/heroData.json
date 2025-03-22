@@ -1,25 +1,25 @@
 [
 	{
 		"bgImg": "/assets/img/hero_bg_1.webp",
-		"subTitle": "Servicios mantenimiento de aire acondicionado",
-		"title": "Mantén tu Confort Todo el Año",
-		"desc": "Detecta señales como ruidos inusuales, flujo de aire reducido, enfriamiento desigual, olores extraños y facturas de energía elevadas.",
+		"subTitle": "Manten tu sistema en buen estado",
+		"title": "Mantenimiento de aire acondicionado",
+		"desc": "Nos preocupamos por que tu factura no incremente, por eso ofrecemos mantenimiento preventivo y correctivo para asegurar el rendimiento y la eficiencia de tu aire acondicionado.",
 		"img": "/assets/img/26541.jpg",
 		"link": "/about"
 	},
 	{
 		"bgImg": "/assets/img/hero_bg_2.webp",
-		"subTitle": "Servicios instalación de aire acondicionado",
-		"title": "Centro de Reparaciones Rápidas y Confiables",
-		"desc": "Identifica problemas en tu aire acondicionado con indicios como ruidos anómalos, menor flujo de aire, enfriamiento irregular, olores atípicos y consumos energéticos elevados.",
+		"subTitle": "Mantente fresco todo el tiempo",
+		"title": " Instalación de aire acondicionado",
+		"desc": "Instalamos aire acondicionado con asesoría profesional para optimizar el rendimiento, la eficiencia energética y sobre todo tu comodidad.",
 		"img": "/assets/img/hero_img_2.png",
 		"link": "/about"
 	},
 	{
 		"bgImg": "/assets/img/hero_bg_3.webp",
-		"subTitle": "Servicios de Reparación de aire acondicionado",
-		"title": "Soluciones Expertas para tu Confort",
-		"desc": "Observa señales como ruidos extraños, reducción del flujo de aire, enfriamiento desigual, olores inusuales y facturas de energía más altas, indicadores de posibles fallos.",
+		"subTitle": "Haz que funcione de nuevo tu sistema",
+		"title": "Servicios de Reparación de aire acondicionado",
+		"desc": "Revivimos tu aire acondicionado con rapidez y profesionalismo, manteniendo su rendimiento y eficiencia en óptimas condiciones.",
 		"img": "/assets/img/hero_img_3.png",
 		"link": "/about"
 	}

@@ -24,7 +24,7 @@ const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 			</li>
 			<li className="menu-item-has-children">
 				<Link
-					href="/service"
+					href="#service"
 					onClick={() => setMobileToggle(false)}
 					className="text-decoration-none">
 					Servicios

@@ -2,6 +2,7 @@
 import { useEffect, FC } from 'react';
 import { LoadBackgroundImages } from '../Common/LoadBackgroudImages';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BreadCumbProps {
 	Title: string;
@@ -14,12 +15,19 @@ const BreadCumb: FC<BreadCumbProps> = ({ Title }) => {
 
 	return (
 		<section
-			className="cs_page_heading cs_bg_filed cs_center cs_primary_bg text-center"
-			style={{ backgroundImage: `url("/assets/img/page_heading_1.webp")` }}>
-			<div className="container">
-				<h1 className="cs_white_color cs_semibold cs_white_color cs_mb_10 cs_fs_64">
-					{Title}
-				</h1>
+			className="cs_page_heading cs_bg_filed cs_center cs_primary_bg text-center position-relative"
+			style={{ height: '50vh' }}>
+			<Image
+				src="/assets/img/page_heading_1.webp"
+				alt="Titulo"
+				fill
+				sizes="100vw"
+				className="object-cover"
+				priority
+			/>
+
+			<div className="container position-relative" style={{ zIndex: 2 }}>
+				<h1 className="cs_white_color cs_semibold cs_mb_10 cs_fs_64">{Title}</h1>
 				<ol className="breadcrumb">
 					<li className="breadcrumb-item">
 						<Link href="/">Inicio</Link>

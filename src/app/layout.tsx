@@ -2,8 +2,16 @@ import { Outfit, DM_Sans } from 'next/font/google';
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
-import Footer from '../Components/Footer/Footer';
-import Header from '../Components/Header';
+import { WhatsAppButton } from '@/Components/WhatsApp/WhatsAppButton';
+import dynamic from 'next/dynamic';
+import Loader from '@/Components/Loader/Loader';
+
+const Header = dynamic(() => import('../Components/Header'), {
+	loading: () => <Loader />,
+});
+const Footer = dynamic(() => import('../Components/Footer/Footer'), {
+	loading: () => <Loader />,
+});
 
 const outfit = Outfit({
 	subsets: ['latin'],
@@ -60,6 +68,7 @@ export default function RootLayout({
 			<body className={`${outfit.variable} ${dm_Sans.variable}`}>
 				<Header />
 				{children}
+				<WhatsAppButton />
 				<Footer />
 			</body>
 		</html>

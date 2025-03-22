@@ -212,6 +212,80 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+	1.2. WhatsApp button
+  ----------------------------------------------------------------*/
+
+.button-whatsapp {
+	position: fixed;
+	bottom: 1.5rem;
+	/* equivale a bottom-6 */
+	right: 1.5rem;
+	/* equivale a right-6 */
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.5rem;
+	/* equivale a w-14 */
+	height: 3.5rem;
+	/* equivale a h-14 */
+	color: #ffffff;
+	/* equivale a text-white */
+	background-color: #25D366;
+	/* equivale a bg-[#25D366] */
+	border-radius: 9999px;
+	/* equivale a rounded-full */
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	/* equivale a shadow-lg */
+	transition: all 300ms;
+	/* equivale a transition-all duration-300 */
+	animation: float 3s ease-in-out infinite;
+	/* animación flotante */
+}
+
+.button-whatsapp:hover {
+	background-color: #15b33d;
+	color: #ffffff;
+	/* equivale a hover:bg-[#128C7E] */
+}
+
+.button-whatsapp svg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+@keyframes float {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-5%);
+	}
+}
+
+
+/*--------------------------------------------------------------
+	1.3. Animation load section
+  ----------------------------------------------------------------*/
+
+/* Estado inicial: elemento oculto y desplazado hacia abajo */
+.fade-in-bottom {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Cuando el elemento es visible: vuelve a la posición normal */
+.fade-in-bottom.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/*--------------------------------------------------------------
 	2. Preloader
   ----------------------------------------------------------------*/
 .cs_preloader {

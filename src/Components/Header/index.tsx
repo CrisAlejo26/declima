@@ -141,9 +141,9 @@ export default function Header({ variant }: HeaderProps) {
 									<div className="cs_header_contact">
 										<div className="cs_header_contact_right">
 											<Link
-												href="/contact"
+												href="#contact"
 												className="cs_btn cs_style_1 text-decoration-none">
-												<span>Leer más</span>
+												<span>Contactar</span>
 												<svg
 													width="14"
 													height="13"

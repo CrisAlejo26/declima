@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
 			</div>
 			<div
 				className="cs_main_footer cs_bg_filed cs_primary_bg cs_white_color"
-				data-background="/assets/img/footer_bg_1.webp">
+				style={{ backgroundImage: "url('/assets/img/footer_bg_1.webp')" }}>
 				<div className="container">
 					<div className="cs_footer_row cs_type_1">
 						<div className="cs_footer_col">

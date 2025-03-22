@@ -1,15 +1,15 @@
 import BreadCumb from '@/Components/Common/BreadCumb';
-import MaintenanceServiceDetail from '@/Components/MaintenanceService/MaintenanceService';
+import RepairService from '@/Components/RepairService/RepairService';
 
-const RepairService = () => {
+const Repair = () => {
 	return (
 		<>
 			<div className="service-deatils-page">
 				<BreadCumb Title="Reparación aire acondicionado" />
-				<MaintenanceServiceDetail />
+				<RepairService />
 			</div>
 		</>
 	);
 };
 
-export default RepairService;
+export default Repair;

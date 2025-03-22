@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import BreadCumb from '@/Components/Common/BreadCumb';
-import MaintenanceServiceDetail from '@/Components/MaintenanceService/MaintenanceService';
+import InstallationService from '@/Components/InstallationService/InstallationService';
 
 const Page: FC = () => {
 	return (
 		<div className="service-deatils-page">
 			<BreadCumb Title="Instalación aire acondicionado" />
-			<MaintenanceServiceDetail />
+			<InstallationService />
 		</div>
 	);
 };

@@ -75,10 +75,10 @@ const HomeSlider: React.FC = () => {
 									</p>
 									<div className="cs_hero_btns">
 										<Link
-											aria-label="Leer más"
+											aria-label="Contactar"
 											href={item.link}
 											className="cs_btn cs_style_1 text-decoration-none">
-											<span>Leer más</span>
+											<span>Contactar</span>
 											<svg
 												width="14"
 												height="13"

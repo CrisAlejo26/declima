@@ -1,33 +1,10 @@
-'use client';
-import { FC, useEffect, useRef, useState } from 'react';
+import { FC } from 'react';
 import data from '../../Data/accordion.json';
 import Image from 'next/image';
-
-interface AccordionItem {
-	title: string;
-	desc: string;
-}
+import type { AccordionItem } from '@/Interfaces/AccordionItem.interface';
+import { Question } from '../Question/Question';
 
 const MaintenanceServiceDetail: FC = () => {
-	const accordionContentRef = useRef<HTMLDivElement | null>(null);
-	const [openItemIndex, setOpenItemIndex] = useState<number>(-1);
-	const [firstItemOpen, setFirstItemOpen] = useState<boolean>(true);
-
-	const handleItemClick = (index: number): void => {
-		if (index === openItemIndex) {
-			setOpenItemIndex(-1);
-		} else {
-			setOpenItemIndex(index);
-		}
-	};
-
-	useEffect(() => {
-		if (firstItemOpen) {
-			setOpenItemIndex(0);
-			setFirstItemOpen(false);
-		}
-	}, [firstItemOpen]);
-
 	return (
 		<div className="service-details">
 			<section>
@@ -46,9 +23,9 @@ const MaintenanceServiceDetail: FC = () => {
 											className="w-100 h-100 object-fit-cover"
 										/>
 									</div>
-									<h2 className="cs_fs_48 cs_mb_20">
+									<h1 className="cs_fs_48 cs_mb_20">
 										Mantenimiento de aire acondicionado en Alicante
-									</h2>
+									</h1>
 									<p className="cs_mb_25">
 										{' '}
 										En Declima, empresa líder en Alicante, nos dedicamos a
@@ -74,10 +51,10 @@ const MaintenanceServiceDetail: FC = () => {
 										exigencias del clima y las necesidades específicas de cada
 										cliente.{' '}
 									</p>
-									<h3 className="cs_fs_30 cs_mb_15">
+									<h2 className="cs_fs_30 cs_mb_15">
 										{' '}
 										Su Confort, Nuestra Prioridad{' '}
-									</h3>{' '}
+									</h2>{' '}
 									<p className="cs_mb_25">
 										{' '}
 										En Declima, transformamos y actualizamos tu sistema de aire
@@ -101,10 +78,10 @@ const MaintenanceServiceDetail: FC = () => {
 										componente opere en condiciones óptimas y prolongando la
 										vida útil de tus equipos.{' '}
 									</p>
-									<h3 className="cs_fs_30 cs_mb_15">
+									<h2 className="cs_fs_30 cs_mb_15">
 										{' '}
 										Servicios Integrales de Climatización en Alicante{' '}
-									</h3>{' '}
+									</h2>{' '}
 									<p className="cs_mb_25">
 										{' '}
 										En Declima, realizamos inspecciones minuciosas y
@@ -132,29 +109,15 @@ const MaintenanceServiceDetail: FC = () => {
 											</svg>
 											Instalaciones Precisas
 										</li>
-										{/* Se pueden incluir otros elementos de la lista con textos optimizados */}
 									</ul>
 									<div className="cs_accordians cs_style_1">
 										{(data as AccordionItem[]).map((item, index) => (
-											<div
+											<Question
 												key={index}
-												className={`cs_accordian ${
-													index === openItemIndex ? 'active' : ''
-												}`}>
-												<div
-													className="cs_accordian_head"
-													onClick={() => handleItemClick(index)}>
-													<h2 className="cs_accordian_title cs_fs_18 cs_medium mb-0">
-														{item.title}
-													</h2>
-													<span className="cs_accordian_toggle"></span>
-												</div>
-												<div
-													className="cs_accordian_body"
-													ref={accordionContentRef}>
-													<p>{item.desc}</p>
-												</div>
-											</div>
+												desc={item.desc}
+												title={item.title}
+												index={index}
+											/>
 										))}
 									</div>
 								</div>
