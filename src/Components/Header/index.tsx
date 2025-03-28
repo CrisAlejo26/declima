@@ -113,8 +113,23 @@ export default function Header({ variant }: HeaderProps) {
 					<div className="container">
 						<div className="cs_main_header_in">
 							<div className="cs_main_header_left">
-								<Link className="cs_site_branding" href="/">
-									<Image src="/favicon.webp" alt="Logo" width={100} height={54} />
+								<Link
+									className="cs_site_branding"
+									href="/"
+									style={{ width: '100px' }}>
+									<div
+										style={{
+											position: 'relative',
+											width: '100px',
+											height: '50px',
+										}}>
+										<Image
+											src="/favicon.webp"
+											alt="Logo"
+											fill
+											style={{ objectFit: 'contain' }}
+										/>
+									</div>
 								</Link>
 							</div>
 							<div className="cs_main_header_center">

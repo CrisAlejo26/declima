@@ -80,12 +80,19 @@ const Footer: React.FC = () => {
 							data-wow-duration="0.9s"
 							data-wow-delay="0.25s">
 							<Link href="/" className="text-decoration-none">
-								<Image
-									src="/favicon.webp"
-									alt="Logo Declima"
-									width={139}
-									height={111}
-								/>
+								<div
+									style={{
+										position: 'relative',
+										width: '100px',
+										height: '50px',
+									}}>
+									<Image
+										src="/favicon.webp"
+										alt="Logo"
+										fill
+										style={{ objectFit: 'contain' }}
+									/>
+								</div>
 							</Link>
 						</div>
 						<div className="cs_footer_contact_card">
