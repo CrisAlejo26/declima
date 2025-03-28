@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
 							data-wow-delay="0.25s">
 							<Link href="/" className="text-decoration-none">
 								<Image
-									src="/assets/img/footer_logo.svg"
+									src="/favicon.webp"
 									alt="Logo Declima"
 									width={139}
 									height={111}

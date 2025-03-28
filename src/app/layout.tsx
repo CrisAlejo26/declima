@@ -62,7 +62,7 @@ export default function RootLayout({
 					name="keywords"
 					content="aire acondicionado, instalación, mantenimiento, reparación, Alicante, declima"
 				/>
-				<link rel="icon" href="/favicon.ico" sizes="any" />
+				<link rel="icon" href="/favicon.webp" sizes="any" />
 				<link rel="canonical" href="https://www.declima.es/" />
 			</head>
 			<body className={`${outfit.variable} ${dm_Sans.variable}`}>

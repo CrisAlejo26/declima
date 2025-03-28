@@ -114,12 +114,7 @@ export default function Header({ variant }: HeaderProps) {
 						<div className="cs_main_header_in">
 							<div className="cs_main_header_left">
 								<Link className="cs_site_branding" href="/">
-									<Image
-										src="/assets/img/logo.svg"
-										alt="Logo"
-										width={212}
-										height={54}
-									/>
+									<Image src="/favicon.webp" alt="Logo" width={100} height={54} />
 								</Link>
 							</div>
 							<div className="cs_main_header_center">
