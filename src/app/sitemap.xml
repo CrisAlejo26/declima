@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.declima.com/</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <!-- Página de About -->
+  <url>
+    <loc>https://www.declima.com/about</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Blog -->
+  <url>
+    <loc>https://www.declima.com/blog</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Contacto -->
+  <url>
+    <loc>https://www.declima.com/contact</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Instalation Service -->
+  <url>
+    <loc>https://www.declima.com/service/instalation-service</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Maintenance Service -->
+  <url>
+    <loc>https://www.declima.com/service/maintenance-service</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Repair Service -->
+  <url>
+    <loc>https://www.declima.com/service/repair-service</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Página de Work -->
+  <url>
+    <loc>https://www.declima.com/work</loc>
+    <lastmod>2025-04-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
