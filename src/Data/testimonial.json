@@ -1,18 +1,18 @@
 [
 	{
-		"img": "/assets/img/avatar_1.png",
+		"img": "/assets/img/team_member_2.webp",
 		"desc": "Gracias a Declima, mi hogar se mantiene a la temperatura ideal. Su atención personalizada y profesionalismo superaron todas mis expectativas.",
 		"title": "Laura Martínez",
 		"subTitle": "Cliente Satisfecha"
 	},
 	{
-		"img": "/assets/img/avatar_2.png",
+		"img": "/assets/img/team_member_1.webp",
 		"desc": "Como propietario de un negocio, confío en Declima para mantener mis instalaciones en perfecto estado. Su rapidez y eficacia son incomparables.",
 		"title": "Carlos Rodríguez",
 		"subTitle": "Propietario de Negocio"
 	},
 	{
-		"img": "/assets/img/avatar_3.png",
+		"img": "/assets/img/team_member_3.webp",
 		"desc": "El equipo de Declima realizó una instalación y mantenimiento excepcionales en mi sistema de aire acondicionado. Su profesionalidad y atención al detalle son insuperables.",
 		"title": "Elena García",
 		"subTitle": "Propietaria Residencial"

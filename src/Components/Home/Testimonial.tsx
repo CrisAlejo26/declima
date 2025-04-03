@@ -174,9 +174,7 @@ const Testimonial: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<div
-				className="cs_testimonial_1_thumb"
-				style={{ backgroundImage: `url('/assets/img/testimonial_img.png')` }}>
+			<div className="cs_testimonial_1_thumb">
 				{/* <div className="cs_testimonial_1_quote_wrap"> */}
 				<div
 					className="cs_testimonial_1_quote cs_accent_bg cs_center wow zoomIn"

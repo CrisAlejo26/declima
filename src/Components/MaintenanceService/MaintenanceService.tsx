@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import data from '../../Data/accordion.json';
+import data from '../../Data/QuestionsMantenince.json';
 import Image from 'next/image';
 import type { AccordionItem } from '@/Interfaces/AccordionItem.interface';
 import { Question } from '../Question/Question';

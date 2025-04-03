@@ -1,17 +1,9 @@
 'use client';
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
-import data from '../../Data/team.json';
 import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
-import Link from 'next/link';
-
-interface TeamItem {
-	img: string;
-	title: string;
-	subTitle: string;
-	number: string;
-}
+import { team } from '@/Data/team';
 
 const Team: React.FC = () => {
 	// We assume that react-slick's Slider type is available.
@@ -28,9 +20,9 @@ const Team: React.FC = () => {
 
 	const settings = {
 		dots: false,
-		infinite: true,
+		infinite: team.length > 4,
 		speed: 600,
-		slidesToShow: 4,
+		slidesToShow: Math.min(4, team.length),
 		slidesToScroll: 1,
 		arrows: false,
 		swipeToSlide: true,
@@ -122,7 +114,7 @@ const Team: React.FC = () => {
 					</div>
 					<div className="cs_height_45 cs_height_lg_45"></div>
 					<Slider ref={sliderRef} {...settings}>
-						{(data as TeamItem[]).map((item, i) => (
+						{team.map((item, i) => (
 							<div key={i} className="cs_slide">
 								<div className="cs_team_member cs_style_1 text-center">
 									<div className="cs_team_member_in">
@@ -195,7 +187,7 @@ const Team: React.FC = () => {
 													</svg>
 												</Link>
 												*/}
-												<Link
+												{/* <Link
 													aria-label="Red social facebook"
 													href="#"
 													className="cs_member_social_item cs_center">
@@ -210,7 +202,7 @@ const Team: React.FC = () => {
 															fill="white"
 														/>
 													</svg>
-												</Link>
+												</Link> */}
 											</div>
 										</div>
 										<div className="cs_team_member_info">
