@@ -43,8 +43,8 @@ const HomeSlider: React.FC = () => {
 		arrows: false,
 		swipeToSlide: true,
 		autoplay: true,
-		autoplaySpeed: 5000,
-		fade: true
+		autoplaySpeed: 1000,
+		fade: true,
 	};
 
 	return (
@@ -55,10 +55,12 @@ const HomeSlider: React.FC = () => {
 						<div
 							className="cs_hero cs_style_1 cs_bg_filed cs_primary_bg cs_center position-relative"
 							style={{ backgroundImage: `url(${item.bgImg})` }}>
-							<div className="position-absolute w-100 h-100" style={{ 
-								background: 'rgba(0,0,0,0.35)', 
-								zIndex: 1 
-							}}></div>
+							<div
+								className="position-absolute w-100 h-100"
+								style={{
+									background: 'rgba(0,0,0,0.35)',
+									zIndex: 1,
+								}}></div>
 							<div className="container position-relative" style={{ zIndex: 2 }}>
 								<div
 									className="cs_hero_text wow fadeInRight"
