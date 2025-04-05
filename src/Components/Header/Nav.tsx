@@ -49,10 +49,10 @@ const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 						</li>
 						<li>
 							<Link
-								href={routes.repairService}
+								href={routes.renewableEnergie}
 								onClick={() => setMobileToggle(false)}
 								className="text-decoration-none">
-								Reparación
+								Energías renovables
 							</Link>
 						</li>
 						<li>
