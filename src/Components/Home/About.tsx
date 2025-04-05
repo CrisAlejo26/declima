@@ -12,6 +12,9 @@ interface AboutProps {
 	FeatureList: string[];
 	NumberContent: string;
 	Number: string;
+	textLocation: string;
+	address: string;
+	addressLink: string;
 }
 
 const About: React.FC<AboutProps> = ({
@@ -22,6 +25,9 @@ const About: React.FC<AboutProps> = ({
 	FeatureList,
 	NumberContent,
 	Number,
+	address,
+	textLocation,
+	addressLink,
 }) => {
 	return (
 		<>
@@ -103,7 +109,7 @@ const About: React.FC<AboutProps> = ({
 											<div className="cs_about_phone_number_icon cs_accent_bg cs_center">
 												<Image
 													src="/assets/img/icons/phone_icon.svg"
-													alt="About"
+													alt="telephone"
 													width={25}
 													height={25}
 												/>
@@ -116,6 +122,27 @@ const About: React.FC<AboutProps> = ({
 														target="_blank"
 														rel="noopener noreferrer">
 														{Number}
+													</Link>
+												</h3>
+											</div>
+										</div>
+										<div className="cs_about_phone_number">
+											<div className="cs_about_phone_number_icon cs_accent_bg cs_center">
+												<Image
+													src="/assets/img/location.svg"
+													alt="location"
+													width={35}
+													height={35}
+												/>
+											</div>
+											<div className="cs_about_phone_number_right">
+												<p className="mb-0">{textLocation}</p>
+												<h3 className="cs_heading_color cs_fs_18 cs_medium mb-0">
+													<Link
+														href={addressLink}
+														target="_blank"
+														rel="noopener noreferrer">
+														{address}
 													</Link>
 												</h3>
 											</div>

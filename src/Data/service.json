@@ -1,10 +1,10 @@
 [
 	{
 		"id": "01",
-		"title": "Reparaciones",
-		"desc": "Servicio de reparación de emergencia para averías y fallos imprevistos en tu aire acondicionado. Respuesta rápida y eficaz para restaurar tu confort.",
+		"title": "Energías renovables",
+		"desc": "Soluciones integrales en energías renovables: asesoramos, instalamos y mantenemos sistemas solares, eólicos y de otras tecnologías limpias para optimizar el consumo energético y promover un futuro sostenible.",
 		"img": "/assets/img/icons/service_icon_5.svg",
-		"link": "/service/repair-service"
+		"link": "/service/renewable-energie"
 	},
 	{
 		"id": "02",

@@ -46,9 +46,14 @@ export default function Home(): JSX.Element {
 					'Mantenimiento Integral',
 					'Revisión del Control Climático',
 					'Servicios de Emergencia en Climatización',
+					'Servicios Energías Renovables',
+					'Somos asociados en APM',
 				]}
 				NumberContent="Llama en cualquier momento para servicios urgentes"
 				Number="(+34) 637 988 046"
+				textLocation="Visitanos en:"
+				address="Calle Santa Leonor Nº11 Bajo , 03005, Alicante"
+				addressLink="https://maps.app.goo.gl/QsH1XBQgWpuhdfCDA"
 			/>
 			<Services />
 			<Team />

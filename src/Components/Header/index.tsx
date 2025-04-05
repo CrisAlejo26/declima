@@ -48,10 +48,18 @@ export default function Header({ variant }: HeaderProps) {
 						<div className="cs_top_header_in">
 							<div className="cs_top_header_left"></div>
 							<div className="cs_top_header_right">
-								<div className="cs_header_social_links_wrap">
-									<p className="mb-0">Siguenos en: </p>
+								<div className="cs_header_social_links_wrap gap-5">
+									<div className="d-flex gap-3">
+										<span>Visitanos en: </span>
+										<span>Calle Santa Leonor Nº11 Bajo , 03005, Alicante</span>
+									</div>
 									<div className="cs_header_social_links">
-										<a href="#" className="cs_social_btn cs_center">
+										<p className="mb-0">Siguenos en: </p>
+										<Link
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://www.facebook.com/people/Declima-Aire-Acondicionado/100047148618491/"
+											className="cs_social_btn cs_center">
 											<svg
 												width="9"
 												height="15"
@@ -63,8 +71,8 @@ export default function Header({ variant }: HeaderProps) {
 													fill="white"
 												/>
 											</svg>
-										</a>
-										<a href="#" className="cs_social_btn cs_center">
+										</Link>
+										{/* <a href="#" className="cs_social_btn cs_center">
 											<svg
 												width="13"
 												height="13"
@@ -102,7 +110,7 @@ export default function Header({ variant }: HeaderProps) {
 													fill="white"
 												/>
 											</svg>
-										</a>
+										</a> */}
 									</div>
 								</div>
 							</div>
@@ -126,7 +134,8 @@ export default function Header({ variant }: HeaderProps) {
 										<Image
 											src="/favicon.webp"
 											alt="Logo"
-											fill
+											width={200}
+											height={200}
 											style={{ objectFit: 'contain' }}
 										/>
 									</div>

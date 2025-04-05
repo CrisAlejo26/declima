@@ -15,24 +15,33 @@ const BreadCumb: FC<BreadCumbProps> = ({ Title }) => {
 
 	return (
 		<section
-			className="cs_page_heading cs_bg_filed cs_center cs_primary_bg text-center position-relative"
+			className="cs_page_heading cs_bg_filed cs_center text-center position-relative"
 			style={{ height: '50vh' }}>
 			<Image
-				src="/assets/img/page_heading_1.webp"
+				src="/assets/img/breadCumb.webp"
 				alt="Titulo"
 				fill
 				sizes="100vw"
-				className="object-cover"
+				className="object-fit-cover"
 				priority
 			/>
 
+			<div
+				className="position-absolute w-100 h-100"
+				style={{
+					background:
+						'linear-gradient(135deg, rgba(76, 151, 243, 0.62), rgba(76, 150, 243, 0.6))',
+					zIndex: 1,
+				}}></div>
 			<div className="container position-relative" style={{ zIndex: 2 }}>
-				<h1 className="cs_white_color cs_semibold cs_mb_10 cs_fs_64">{Title}</h1>
+				<h1 className="text-white cs_semibold cs_mb_10 cs_fs_64">{Title}</h1>
 				<ol className="breadcrumb">
-					<li className="breadcrumb-item">
-						<Link href="/">Inicio</Link>
+					<li className="breadcrumb-item text-white">
+						<Link href="/" className="text-white text-decoration-none">
+							Inicio
+						</Link>
 					</li>
-					<li className="breadcrumb-item">
+					<li className="breadcrumb-item text-white">
 						<svg
 							width="12"
 							height="11"

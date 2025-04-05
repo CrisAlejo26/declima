@@ -4,7 +4,7 @@ import Image from 'next/image';
 import type { AccordionItem } from '@/Interfaces/AccordionItem.interface';
 import { Question } from '../Question/Question';
 
-const RepairService: FC = () => {
+const RenewableEnergyService: FC = () => {
 	return (
 		<div className="service-details">
 			<section>
@@ -16,57 +16,55 @@ const RepairService: FC = () => {
 								<div className="cs_service_details">
 									<div className="position-relative">
 										<Image
-											src="/assets/img/service_repair.webp"
-											alt="Reparación de aire acondicionado en Alicante - Declima"
+											src="/assets/img/service_energi_renewable.webp" // Asegúrate de tener esta imagen o actualiza la ruta
+											alt="Instalación y mantenimiento de sistemas de energías renovables - Declima"
 											width={720}
 											height={305}
 											className="w-100 h-100 object-fit-cover"
 										/>
 									</div>
 									<h1 className="cs_fs_48 cs_mb_20">
-										Reparación de Aire Acondicionado en Alicante – Servicio
-										Profesional por Declima
+										Energías Renovables: Soluciones Sostenibles para Hogar y
+										Empresa – Declima
 									</h1>
 									<p className="cs_mb_25">
 										En <strong>Declima</strong> nos especializamos en la{' '}
 										<strong>
-											reparación de aire acondicionado en Alicante
+											instalación y mantenimiento de sistemas de energías
+											renovables
 										</strong>
-										, ofreciendo soluciones rápidas y efectivas para restaurar
-										el funcionamiento óptimo de tu sistema. Nuestro equipo de
-										técnicos certificados se encarga de diagnosticar y
-										solucionar fallos, garantizando que tu equipo opere de forma
-										segura y eficiente.
+										, ofreciendo soluciones innovadoras y eficientes para
+										optimizar el uso de recursos naturales y reducir la huella
+										de carbono.
 									</p>
 									<p className="cs_mb_25">
-										Con una amplia experiencia en el sector, hemos perfeccionado
-										nuestro proceso de reparación para atender desde pequeños
-										inconvenientes hasta averías complejas. Nuestro compromiso
-										es brindar un servicio integral que minimice las
-										interrupciones, mejore la calidad del aire y prolongue la
-										vida útil de tus equipos de climatización.
+										Con amplia experiencia en el sector de la energía limpia,
+										diseñamos proyectos a medida que integran tecnología solar,
+										eólica y otras alternativas renovables, permitiéndote
+										ahorrar en costos energéticos y contribuir a un futuro
+										sostenible.
 									</p>
 									<h2 className="cs_fs_30 cs_mb_15">
-										Proceso de Reparación de Alta Calidad
+										Proceso de Implementación de Soluciones Renovables
 									</h2>
 									<p className="cs_mb_25">
-										Nuestro proceso comienza con un diagnóstico exhaustivo que
-										identifica la raíz del problema. Utilizamos tecnología
-										avanzada y métodos de análisis precisos para determinar la
-										causa del fallo. Esto nos permite intervenir de manera
-										rápida y eficaz, restaurando el rendimiento del sistema en
-										el menor tiempo posible.
+										Nuestro proceso inicia con un estudio de viabilidad y un
+										análisis detallado de tus necesidades energéticas.
+										Utilizamos tecnología avanzada para evaluar el potencial de
+										energía en tu entorno, lo que nos permite diseñar una
+										solución óptima y personalizada.
 									</p>
 									<p className="cs_mb_25">
-										Durante la reparación, nuestros técnicos emplean repuestos y
-										técnicas de alta calidad, asegurando que cada componente
-										cumpla con los estándares de seguridad y eficiencia. Además,
-										te brindamos asesoramiento personalizado para prevenir
-										futuras averías y mantener tu equipo en óptimas condiciones.
+										Durante la instalación, empleamos componentes de alta
+										calidad y técnicas innovadoras, garantizando que cada
+										sistema opere con máxima eficiencia y cumpla con las
+										normativas de seguridad vigentes. Además, te brindamos
+										asesoramiento continuo para optimizar el rendimiento de tu
+										inversión.
 									</p>
 									<h2 className="cs_fs_30 cs_mb_15">
-										¿Por Qué Elegir Declima para la Reparación de Tu Aire
-										Acondicionado?
+										¿Por Qué Elegir Declima para tus Soluciones en Energías
+										Renovables?
 									</h2>
 									<p className="cs_mb_25">
 										Elegir Declima significa contar con un servicio profesional,
@@ -90,7 +88,7 @@ const RepairService: FC = () => {
 													fill="currentColor"
 												/>
 											</svg>
-											Diagnóstico rápido y preciso
+											Evaluación energética precisa y personalizada
 										</li>
 										<li>
 											<svg
@@ -108,7 +106,8 @@ const RepairService: FC = () => {
 													fill="currentColor"
 												/>
 											</svg>
-											Uso de repuestos de alta calidad y técnicas avanzadas
+											Implementación de tecnología de punta y componentes de
+											alta calidad
 										</li>
 										<li>
 											<svg
@@ -126,31 +125,30 @@ const RepairService: FC = () => {
 													fill="currentColor"
 												/>
 											</svg>
-											Atención personalizada y soporte técnico continuo
+											Asesoramiento integral y mantenimiento preventivo
+											continuo
 										</li>
 									</ul>
 									<h2 className="cs_fs_30 cs_mb_15">
-										Beneficios de una Reparación Profesional en Alicante
+										Beneficios de una Instalación Profesional de Energías
+										Renovables
 									</h2>
 									<p className="cs_mb_25">
-										Contar con un servicio de reparación profesional no solo
-										restablece el funcionamiento de tu sistema, sino que
-										también:
+										Contar con un servicio profesional en energías renovables no
+										solo optimiza tu consumo energético, sino que también:
 									</p>
 									<p className="cs_mb_25">
-										<strong>Extiende la vida útil del equipo:</strong> Una
-										reparación oportuna evita daños mayores y reduce el riesgo
-										de averías recurrentes.
+										<strong>Reduce tus costos:</strong> Aprovecha fuentes
+										limpias para disminuir tu factura de energía.
 									</p>
 									<p className="cs_mb_25">
-										<strong>Reduce costos a largo plazo:</strong> Solucionar el
-										problema de raíz minimiza la necesidad de intervenciones
-										futuras, optimizando el consumo energético.
+										<strong>Incrementa el valor de tu propiedad:</strong> La
+										implementación de sistemas sostenibles agrega un plus a tu
+										inmueble.
 									</p>
 									<p className="cs_mb_25">
-										<strong>Garantiza la seguridad:</strong> Nuestros técnicos
-										se aseguran de que cada componente cumpla con las normativas
-										de seguridad, brindándote tranquilidad y confianza.
+										<strong>Contribuye al medio ambiente:</strong> Disminuye tu
+										huella de carbono y fomenta un futuro más ecológico.
 									</p>
 									<div className="cs_accordians cs_style_1">
 										{(data as AccordionItem[]).map((item, index) => (
@@ -173,4 +171,4 @@ const RepairService: FC = () => {
 	);
 };
 
-export default RepairService;
+export default RenewableEnergyService;

@@ -24,10 +24,10 @@ const Nav: React.FC<NavProps> = ({ setMobileToggle }) => {
 			</li>
 			<li>
 				<Link
-					href={getAnchorLink('#about')}
+					href="/about"
 					onClick={() => setMobileToggle(false)}
 					className="text-decoration-none">
-					Acerca de
+					La empresa
 				</Link>
 			</li>
 			<li className="menu-item-has-children">

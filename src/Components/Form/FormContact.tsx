@@ -181,7 +181,7 @@ export const FormContact = () => {
 				<button
 					className="btn w-100"
 					type="submit"
-					style={{ backgroundColor: '#cc4a00', color: '#fff' }}>
+					style={{ backgroundColor: '#4c96f3', color: '#fff' }}>
 					Reservar Cita
 				</button>
 			</form>

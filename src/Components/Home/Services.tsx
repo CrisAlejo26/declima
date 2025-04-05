@@ -12,10 +12,7 @@ const Services: React.FC = () => {
 	}, []);
 
 	return (
-		<section
-			id="service"
-			className="cs_bg_filed"
-			style={{ backgroundImage: `url('/assets/img/service_bg_1.svg')` }}>
+		<section id="service" className="cs_bg_filed cs_light_blue_bg">
 			<div className="cs_height_115 cs_height_lg_70"></div>
 			<div className="container">
 				<div className="cs_section_heading cs_style_1 text-center">

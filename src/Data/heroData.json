@@ -1,24 +1,24 @@
 [
 	{
-		"bgImg": "/assets/img/hero_bg_1.webp",
-		"subTitle": "Manten tu sistema en buen estado",
-		"title": "Mantenimiento de aire acondicionado",
-		"desc": "Nos preocupamos por que tu factura no incremente, por eso ofrecemos mantenimiento preventivo y correctivo para asegurar el rendimiento y la eficiencia de tu aire acondicionado.",
-		"img": "/assets/img/26541.jpg",
-		"link": "/about"
-	},
-	{
 		"bgImg": "/assets/img/hero_bg_2.webp",
 		"subTitle": "Mantente fresco todo el tiempo",
-		"title": " Instalación de aire acondicionado",
+		"title": " Instalación de de sistema de climatización",
 		"desc": "Instalamos aire acondicionado con asesoría profesional para optimizar el rendimiento, la eficiencia energética y sobre todo tu comodidad.",
 		"img": "/assets/img/hero_img_2.png",
 		"link": "/about"
 	},
 	{
+		"bgImg": "/assets/img/hero_bg_1.webp",
+		"subTitle": "Manten tu sistema en buen estado",
+		"title": "Mantenimiento de sistema de climatización",
+		"desc": "Nos preocupamos por que tu factura no incremente, por eso ofrecemos mantenimiento preventivo y correctivo para asegurar el rendimiento y la eficiencia de tu aire acondicionado.",
+		"img": "/assets/img/about_img_1.webp",
+		"link": "/about"
+	},
+	{
 		"bgImg": "/assets/img/hero_bg_3.webp",
 		"subTitle": "Haz que funcione de nuevo tu sistema",
-		"title": "Servicios de Reparación de aire acondicionado",
+		"title": "Servicios de Reparación de sistema de climatización",
 		"desc": "Revivimos tu aire acondicionado con rapidez y profesionalismo, manteniendo su rendimiento y eficiencia en óptimas condiciones.",
 		"img": "/assets/img/hero_img_3.png",
 		"link": "/about"

@@ -42,6 +42,9 @@ const HomeSlider: React.FC = () => {
 		slidesToScroll: 1,
 		arrows: false,
 		swipeToSlide: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		fade: true
 	};
 
 	return (
@@ -50,14 +53,18 @@ const HomeSlider: React.FC = () => {
 				{(data as HeroDataItem[]).map((item, i) => (
 					<div key={i} className="cs_slide">
 						<div
-							className="cs_hero cs_style_1 cs_bg_filed cs_primary_bg cs_center"
+							className="cs_hero cs_style_1 cs_bg_filed cs_primary_bg cs_center position-relative"
 							style={{ backgroundImage: `url(${item.bgImg})` }}>
-							<div className="container">
+							<div className="position-absolute w-100 h-100" style={{ 
+								background: 'rgba(0,0,0,0.35)', 
+								zIndex: 1 
+							}}></div>
+							<div className="container position-relative" style={{ zIndex: 2 }}>
 								<div
 									className="cs_hero_text wow fadeInRight"
 									data-wow-duration="0.9s"
 									data-wow-delay="0.25s">
-									<h3 className="cs_hero_mini_title cs_accent_color cs_fs_18 cs_medium cs_mb_8">
+									<h3 className="cs_hero_mini_title cs_gray_color cs_fs_18 cs_medium cs_mb_8">
 										<Image
 											src="/assets/img/icons/fan.svg"
 											alt="img"

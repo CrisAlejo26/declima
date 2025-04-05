@@ -1,11 +1,11 @@
 import BreadCumb from '@/Components/Common/BreadCumb';
-import RepairService from '@/Components/RepairService/RepairService';
+import RepairService from '@/Components/RevewableEnergie/RevewableEnergie';
 
 const Repair = () => {
 	return (
 		<>
 			<div className="service-deatils-page">
-				<BreadCumb Title="Reparación aire acondicionado" />
+				<BreadCumb Title="Energías renovables" />
 				<RepairService />
 			</div>
 		</>
