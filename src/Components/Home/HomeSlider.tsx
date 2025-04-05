@@ -43,7 +43,7 @@ const HomeSlider: React.FC = () => {
 		arrows: false,
 		swipeToSlide: true,
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 4000,
 		fade: true,
 	};
 
