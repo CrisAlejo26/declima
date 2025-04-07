@@ -25,7 +25,7 @@ const dm_Sans = DM_Sans({
 });
 
 export const metadata = {
-	metadataBase: new URL('http://localhost:3000'),
+	metadataBase: new URL('https://www.declima.com'),
 	title: {
 		absolute: 'Declima - Servicios de Aire Acondicionado en Alicante',
 		default: 'Declima - Servicios de Aire Acondicionado en Alicante',
@@ -37,9 +37,24 @@ export const metadata = {
 		title: 'Declima - Servicios de Aire Acondicionado en Alicante',
 		description:
 			'Declima ofrece instalación, mantenimiento y reparación de aires acondicionados en Alicante y alrededores. Conócenos y disfruta de un ambiente óptimo todo el año.',
-		images: ['/openGraphImage.jpg'],
+		images: [
+			{
+				url: '/favicon.webp',
+				width: 1200,
+				height: 630,
+				alt: 'Declima - Servicios de Aire Acondicionado en Alicante',
+			},
+		],
 		locale: 'es_ES',
 		type: 'website',
+		url: 'https://www.declima.com',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Declima - Servicios de Aire Acondicionado en Alicante',
+		description:
+			'Instalación, mantenimiento y reparación de aire acondicionado en Alicante y alrededores.',
+		images: ['/favicon.webp'],
 	},
 	robots: {
 		index: true,
@@ -63,7 +78,7 @@ export default function RootLayout({
 					content="aire acondicionado, instalación, mantenimiento, reparación, Alicante, declima"
 				/>
 				<link rel="icon" href="/favicon.webp" sizes="any" />
-				<link rel="canonical" href="https://www.declima.es/" />
+				<link rel="canonical" href="https://www.declima.com/" />
 			</head>
 			<body className={`${outfit.variable} ${dm_Sans.variable}`}>
 				<Header />
