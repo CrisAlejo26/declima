@@ -11,9 +11,9 @@ const About = dynamic(() => import('../Components/Home/About'), {
 const Services = dynamic(() => import('../Components/Home/Services'), {
 	loading: () => <Loader />,
 });
-const Team = dynamic(() => import('../Components/Home/Team'), {
-	loading: () => <Loader />,
-});
+// const Team = dynamic(() => import('../Components/Home/Team'), {
+// 	loading: () => <Loader />,
+// });
 const Choose = dynamic(() => import('../Components/Home/Choose'), {
 	loading: () => <Loader />,
 });
@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
 				addressLink="https://maps.app.goo.gl/QsH1XBQgWpuhdfCDA"
 			/>
 			<Services />
-			<Team />
+			{/* <Team /> */}
 			<Choose />
 			<Testimonial />
 			<Faq />

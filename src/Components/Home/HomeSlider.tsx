@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
+import { whatsAppUrl } from '@/Components/WhatsApp/WhatsAppButton';
 import data from '../../Data/heroData.json';
 import { LoadBackgroundImages } from '../Common/LoadBackgroudImages';
 import VideoModal from '../VideoModal/VideoModal';
@@ -84,22 +85,23 @@ const HomeSlider: React.FC = () => {
 									</p>
 									<div className="cs_hero_btns">
 										<Link
-											aria-label="Contactar"
-											href={item.link}
-											className="cs_btn cs_style_1 text-decoration-none">
-											<span>Contactar</span>
+											href={whatsAppUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="cs_btn cs_style_1"
+											aria-label="Llamar al 637 988 046">
 											<svg
-												width="14"
-												height="13"
-												viewBox="0 0 14 13"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M8.28125 0.71875L13.7812 5.96875C13.9271 6.11458 14 6.29167 14 6.5C14 6.70833 13.9271 6.88542 13.7812 7.03125L8.28125 12.2812C7.90625 12.5729 7.55208 12.5729 7.21875 12.2812C6.92708 11.9062 6.92708 11.5521 7.21875 11.2188L11.375 7.25H0.75C0.291667 7.20833 0.0416667 6.95833 0 6.5C0.0416667 6.04167 0.291667 5.79167 0.75 5.75H11.375L7.21875 1.78125C6.92708 1.44792 6.92708 1.09375 7.21875 0.71875C7.55208 0.427083 7.90625 0.427083 8.28125 0.71875Z"
-													fill="currentColor"
-												/>
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												fill="currentColor"
+												viewBox="0 0 16 16"
+												className="me-2">
+												<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
 											</svg>
+											<span>637 988 046</span>
 										</Link>
+
 										{/* <span
 											className="cs_hero_player_btn cs_video_open"
 											onClick={handleClick}>
