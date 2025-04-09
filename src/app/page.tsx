@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
 				Img="/assets/img/about_img_1.webp"
 				TitleUp="Sobre Nosotros"
 				Title="Donde cada respiración es fresca y agradable"
-				Content="Diagnóstico rápido y reparación de cualquier inconveniente en tu sistema de aire acondicionado para garantizar un rendimiento óptimo..."
+				Content="Diagnóstico rápido y reparación de cualquier inconveniente en tu sistema de aire acondicionado para garantizar un rendimiento óptimo. Como miembros de APEME (Asociación Provincial de Empresarios de Montajes Eléctricos y Telecomunicaciones de Alicante), garantizamos los más altos estándares de calidad y profesionalidad en nuestros servicios..."
 				FeatureList={[
 					'Optimización del Flujo de Aire',
 					'Pruebas de Calidad del Aire',
@@ -47,7 +47,7 @@ export default function Home(): JSX.Element {
 					'Revisión del Control Climático',
 					'Servicios de Emergencia en Climatización',
 					'Servicios Energías Renovables',
-					'Somos asociados en APM',
+					'Somos asociados en APEME',
 				]}
 				NumberContent="Llama en cualquier momento para servicios urgentes"
 				Number="(+34) 637 988 046"

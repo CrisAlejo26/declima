@@ -54,7 +54,7 @@ export const metadata = {
 		title: 'Declima - Servicios de Aire Acondicionado en Alicante',
 		description:
 			'Instalación, mantenimiento y reparación de aire acondicionado en Alicante y alrededores.',
-		images: ['/favicon.webp'],
+		images: ['/declima.svg'],
 	},
 	robots: {
 		index: true,
